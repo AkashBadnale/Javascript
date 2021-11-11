@@ -1,3 +1,9 @@
 Q.  Getting error '"node"' is not recognized as an internal or external command while running javascript file ?
 --> You need to install Node.js before running Javascript file.
     If you have already installed Node.js then check the 'path' in enviornment variables. Check for Node.js /bin path.
+
+Q.  Getting  ^  ReferenceError: prompt is not defined error ?
+--> It seems you run this code in a Node.js environment, in the site that provides this environment. 
+    window object is not defined in this environment. You can try to test you script in a browser console or from inside an HTML file.
+    
+    prompt() is a method of the Global window object found in browsers. It's not part of the JavaScript language
